@@ -69,7 +69,7 @@
     position: relative;
     top: 0;
     transition: top .3s, opacity .3s;
-    opacity: .75;
+    opacity: .85;
 }
 .SOGNav__MenuItem:hover img {
     top: -3px;
