@@ -91,10 +91,12 @@
     opacity: 0;
     transition: opacity .5s, top .5s;
     background: white;
+    visibility: hidden;
 }
 .SOGNav__MenuItem:hover .SOGNav__MenuItem__Help {
     opacity: .9;
     top: 70px;
+    visibility: visible;
 }
 .SOGNav__MenuItem__Help::before {
     display: block;
