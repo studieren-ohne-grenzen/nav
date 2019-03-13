@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    animation: floating 2s infinite forwards running;
+    animation: floating 2.5s infinite forwards running;
 }
 @keyframes floating {
     0% {
@@ -76,20 +76,39 @@
     opacity: 1;
 }
 .SOGNav__MenuItem__Help {
-    border: 1px solid darkblue;
-    color: darkblue;
-    border-radius: 14px;
-    height: 13px;
-    width: 13px;
-    font-size: 9px;
+    border: 1px solid #00679e;
+    color: #00679e;
+    border-radius: 8px;
+    width: 115px;
+    font-size: 11px;
     display: block;
     position: absolute;
-    top: -10px;
-    right: -15px;
-    opacity: .5;
+    top: 65px;
+    right: calc(50% - 65px);
+    z-index: 100;
+    text-align: left;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity .5s, top .5s;
+    background: white;
 }
-.SOGNav__MenuItem__Help:hover {
-    opacity: 1;
+.SOGNav__MenuItem:hover .SOGNav__MenuItem__Help {
+    opacity: .9;
+    top: 70px;
+}
+.SOGNav__MenuItem__Help::before {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid darkblue;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: calc(100% - 68px);
+    transform: rotateZ(45deg);
+    background: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -106,27 +125,27 @@
 <div class="SOGNav__Container">
   <a class="SOGNav__MenuItem" href="https://dashboard.studieren-ohne-grenzen.org/">
     <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-dashboard-white.svg?sanitize=true" /><br/>
-    Dashboard <span class="SOGNav__MenuItem__Help" title="Für das Managen deines SOG-Accounts und deiner Gruppen">?</span>
+    Dashboard <span class="SOGNav__MenuItem__Help">Für das Managen deines SOG-Accounts und deiner Gruppen</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://cloud.studieren-ohne-grenzen.org/">
     <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-cloud-white.svg?sanitize=true" /><br/>
-    Cloud <span class="SOGNav__MenuItem__Help" title="Für das gemeinsame Verwalten von Dateien, Bildern, Terminen, etc.">?</span>
+    Cloud <span class="SOGNav__MenuItem__Help">Für das gemeinsame Verwalten von Dateien, Bildern, Terminen, etc.</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://wiki.studieren-ohne-grenzen.org/">
     <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-wiki-white.svg?sanitize=true" /><br/>
-    Wiki <span class="SOGNav__MenuItem__Help" title="Für die Dokumentation und zum Wiederfinden vereinsweiten Wissens">?</span>
+    Wiki <span class="SOGNav__MenuItem__Help">Für die Dokumentation und das Wiederfinden vereinsweiten Wissens</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://chat.studieren-ohne-grenzen.org/">
     <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-chat-white.svg?sanitize=true" /><br/>
-    Chat <span class="SOGNav__MenuItem__Help" title="Für das Chatten in Gruppen und mit einzelnen Mitgliedern">?</span>
+    Chat <span class="SOGNav__MenuItem__Help">Für das Chatten in Gruppen und mit einzelnen Mitgliedern</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://webmail.studieren-ohne-grenzen.org/">
     <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-mail-white.svg?sanitize=true" /><br/>
-    Mail <span class="SOGNav__MenuItem__Help" title="Für das Lesen und Schreiben von E-Mails">?</span>
+    Mail <span class="SOGNav__MenuItem__Help">Für das Lesen und Schreiben von E-Mails</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://civicrm.studieren-ohne-grenzen.org/">
     <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-crm-white.svg?sanitize=true" /><br/>
-    CRM <span class="SOGNav__MenuItem__Help" title="Für die Betreuung und Pflege der Daten von Paten, Spendern und Mitgliedern">?</span>
+    CRM <span class="SOGNav__MenuItem__Help">Für die Betreuung und Pflege der Daten von Paten, Spendern und Mitgliedern</span>
   </a>
   <div class="SOGNav__PullHandle"></div>
 </div>
