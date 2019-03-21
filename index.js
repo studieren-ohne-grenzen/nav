@@ -1,6 +1,5 @@
-(function(document){
-  var style = document.createElement('style')
-  style.textContent = `
+(function(window, document){
+  var css = `
 .SOGNav__Container {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -108,10 +107,7 @@
     }
 }
 `
-  document.head.append(style)
-  var container = document.createElement('div')
-  document.body.append(container)
-  container.outerHTML = `
+  var html = `
 <div class="SOGNav__Container">
   <a class="SOGNav__MenuItem" href="https://dashboard.studieren-ohne-grenzen.org/">
     <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-dashboard-white.svg?sanitize=true" /><br/>
@@ -140,4 +136,14 @@
   <div class="SOGNav__PullHandle"></div>
 </div>
 `
-})(document)
+
+  // init
+  window.addEventListener('DOMContentLoaded', function() {
+    var container = document.createElement('div')
+    var style = document.createElement('style')
+    style.textContent = css
+    document.head.append(style)
+    document.body.append(container)
+    container.outerHTML = html
+  })
+})(window, document)
