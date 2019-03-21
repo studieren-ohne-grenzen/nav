@@ -8,6 +8,7 @@
     max-width: 100%;
     width: 600px;
     height: 83px;
+    padding: 0 2%;
     position: absolute;
     top: -83px;
     left: calc(50% - 300px);
@@ -40,6 +41,7 @@
 .SOGNav__MenuItem {
     display: block;
     height: 50%;
+    width: 16%; /*100% / 6 */
     margin: 15px;
     text-align: center;
     position: relative;
