@@ -27,7 +27,7 @@
     height: 40px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-image: url(https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/esfbird-white-on-transparent.png);
+    background-image: url(./esfbird-white-on-transparent.png);
     background-size: 21%;
     background-color: #57b4dc;
     position: absolute;
