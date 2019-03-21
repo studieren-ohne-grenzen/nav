@@ -27,7 +27,7 @@
     height: 40px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-image: url(./esfbird-white-on-transparent.png);
+    background-image: url(./img/esfbird-white-on-transparent.png);
     background-size: 21%;
     background-color: #57b4dc;
     position: absolute;
@@ -111,27 +111,27 @@
   var html = `
 <div class="SOGNav__Container">
   <a class="SOGNav__MenuItem" href="https://dashboard.studieren-ohne-grenzen.org/">
-    <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-dashboard-white.svg?sanitize=true" /><br/>
+    <img src="https://studieren-ohne-grenzen.github.io/nav/img/service-dashboard-white.svg" /><br/>
     Dashboard <span class="SOGNav__MenuItem__Help">Für das Managen deines SOG-Accounts und deiner Gruppen</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://cloud.studieren-ohne-grenzen.org/">
-    <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-cloud-white.svg?sanitize=true" /><br/>
+    <img src="https://studieren-ohne-grenzen.github.io/nav/img/service-cloud-white.svg" /><br/>
     Cloud <span class="SOGNav__MenuItem__Help">Für das gemeinsame Verwalten von Dateien, Bildern, Terminen, etc.</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://wiki.studieren-ohne-grenzen.org/">
-    <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-wiki-white.svg?sanitize=true" /><br/>
+    <img src="https:///studieren-ohne-grenzen.github.io/nav/img/service-wiki-white.svg" /><br/>
     Wiki <span class="SOGNav__MenuItem__Help">Für die Dokumentation und das Wiederfinden vereinsweiten Wissens</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://chat.studieren-ohne-grenzen.org/">
-    <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-chat-white.svg?sanitize=true" /><br/>
+    <img src="https://studieren-ohne-grenzen.github.io/nav/img/service-chat-white.svg" /><br/>
     Chat <span class="SOGNav__MenuItem__Help">Für das Chatten in Gruppen und mit einzelnen Mitgliedern</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://webmail.studieren-ohne-grenzen.org/">
-    <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-mail-white.svg?sanitize=true" /><br/>
+    <img src="https://studieren-ohne-grenzen.github.io/nav/img/service-mail-white.svg" /><br/>
     Mail <span class="SOGNav__MenuItem__Help">Für das Lesen und Schreiben von E-Mails</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://civicrm.studieren-ohne-grenzen.org/">
-    <img src="https://raw.githubusercontent.com/studieren-ohne-grenzen/sog-ansible/master/files/img/service-crm-white.svg?sanitize=true" /><br/>
+    <img src="https://studieren-ohne-grenzen.github.io/nav/img/service-crm-white.svg" /><br/>
     CRM <span class="SOGNav__MenuItem__Help">Für die Betreuung und Pflege der Daten von Paten, Spendern und Mitgliedern</span>
   </a>
   <div class="SOGNav__PullHandle"></div>
