@@ -27,7 +27,7 @@
     height: 40px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-image: url(./img/esfbird-white-on-transparent.png);
+    background-image: url('https:///studieren-ohne-grenzen.github.io/nav/img/esfbird-white-on-transparent.png');
     background-size: 21%;
     background-color: #57b4dc;
     position: absolute;
