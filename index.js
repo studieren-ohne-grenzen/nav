@@ -17,18 +17,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    animation: floating 2.5s infinite forwards running;
-}
-@keyframes floating {
-    0% {
-      transform: translateY(0%);
-    }
-    50% {
-      transform: translateY(5%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
 }
 .SOGNav__Container:hover {
     top: 0;
@@ -102,7 +90,7 @@
     display: block;
     width: 10px;
     height: 10px;
-    border: 1px solid darkblue;
+    border: 1px solid #00679e;
     border-bottom-width: 0;
     border-right-width: 0;
     content: '';
