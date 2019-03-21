@@ -8,7 +8,7 @@
     max-width: 100%;
     width: 600px;
     height: 83px;
-    padding: 0 2%;
+    padding: 0 10px;
     position: absolute;
     top: -83px;
     left: calc(50% - 300px);
