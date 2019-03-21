@@ -138,12 +138,14 @@
 `
 
   // init
-  window.addEventListener('DOMContentLoaded', function() {
+  function init() {
     var container = document.createElement('div')
     var style = document.createElement('style')
     style.textContent = css
     document.head.append(style)
     document.body.append(container)
     container.outerHTML = html
-  })
+  }
+  window.addEventListener('DOMContentLoaded', init)
+  if (document.readyState !== 'loading') init()
 })(window, document)
