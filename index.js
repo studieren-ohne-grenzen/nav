@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    z-index: 99999;
+    z-index: 7999;
 }
 .SOGNav__Container:hover {
     top: 0;
