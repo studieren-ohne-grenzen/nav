@@ -112,9 +112,9 @@
 `
   var html = `
 <div class="SOGNav__Container">
-  <a class="SOGNav__MenuItem" href="https://dashboard.studieren-ohne-grenzen.org/">
+  <a class="SOGNav__MenuItem" href="https://vogelnest.studieren-ohne-grenzen.org/">
     <img src="https://studieren-ohne-grenzen.github.io/nav/img/service-dashboard-white.svg" /><br/>
-    Dashboard <span class="SOGNav__MenuItem__Help">Für das Managen deines SOG-Accounts und deiner Gruppen</span>
+    Vogelnest <span class="SOGNav__MenuItem__Help">Für das Managen deines SOG-Accounts und deiner Gruppen</span>
   </a>
   <a class="SOGNav__MenuItem" href="https://cloud.studieren-ohne-grenzen.org/">
     <img src="https://studieren-ohne-grenzen.github.io/nav/img/service-cloud-white.svg" /><br/>
