@@ -81,7 +81,7 @@
     padding: 5px;
     opacity: 0;
     transition: opacity .2s, top .2s;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
     background: white;
     visibility: hidden;
 }
